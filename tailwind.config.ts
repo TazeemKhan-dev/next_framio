@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+import bgg from '@/public/assets/images/gradient-bg.svg'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -69,7 +72,7 @@ module.exports = {
         IBMPlex: ["var(--font-ibm-plex)"],
       },
       backgroundImage: {
-        "purple-gradient": "url('/assets/images/gradient-bg.svg')",
+        "purple-gradient":  `url(${bgg}) `,
         banner: "url('/assets/images/banner-bg.png')",
       },
       borderRadius: {
